@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+                <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            *{ margin: 0%; padding: 0%;}
+.body {
+height: 418px;
+    width: 390px;
+    background-color: black;
+    border: 2px solid darkgray;
+    border-bottom-style: hidden;
+    box-shadow: 0px 0px 33px 10px black;
+    /* transform: scale(2); */
+
+}
+.body:hover{
+    transform: scale(1.2);
+    transition:2s;
+}
+#screen{
+        width: 90%;
+    text-align: center;
+    /* margin-left: 10%; */
+    height: 55px;
+    /* margin-top: 15px; */
+    font-size: 40px;
+    background: darkgreen;
+    color: white;
+        margin: 5%;
+} 
+#btns{
+        text-align: center;
+}  
+
+button{
+ height: 65px;
+    width: 70px;
+    /* margin-top: 25px; */
+    /* margin-left: 19px; */
+    border-radius: 14px;
+        border-radius: 14px;
+    margin: 5px;
+}
+
+button:active{
+    border: 5px solid white;
+    transition: 15ms;
+    background-color: black;
+    color: white;
+}
+.op{
+    background:orange;
+}
+
+#btnequal{
+background: #6db4b5;
+}
+
+@media (max-width:600px){
+    .body:hover{
+
+    transform: scale(1);
+    transition:0.1s;
+
+
+    }
+}
+body{
+       background-color: dimgray;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#user{
+    display: inline;
+    position: relative;
+    top: 8px;
+}
+        </style>
+        <script>
+
+function one() {
+
+a=document.getElementById('btn1').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function two() {
+
+a=document.getElementById('btn2').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function three() {
+
+a=document.getElementById('btn3').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function btndevide() {
+
+a=document.getElementById('btndevide').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function four() {
+
+a=document.getElementById('btn4').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function five() {
+
+a=document.getElementById('btn5').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function six() {
+
+a=document.getElementById('btn6').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function btnx() {
+
+a=document.getElementById('btnX').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function seven() {
+
+a=document.getElementById('btn7').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function eight() {
+
+a=document.getElementById('btn8').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function nine() {
+
+a=document.getElementById('btn9').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function plus() {
+
+a=document.getElementById('btnplus').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function btnsub() {
+
+a=document.getElementById('btnsub').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function btnadd() {
+
+a=document.getElementById('btnadd').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function zero() {
+
+a=document.getElementById('btn0').value;
+ document.getElementById('screen').value+=a;
+
+}
+function btnmod() {
+
+a=document.getElementById('btnmod').value;
+ document.getElementById('screen').value+=a;
+
+}
+
+function equal(){
+    a=document.getElementById('screen').value;
+    document.getElementById('screen').value=eval(a);
+}
+function user(){
+    let a=document.getElementById('user').value=prompt("Enter your value");
+    document.getElementById('screen').value=a;
+}
+
+        </script>
+        <body>
+        
+
+            <div class="body">
+        <input id="screen" type="text">
+        <div id="btns">
+            <button onclick="one()"value="1" id="btn1" >1</button>
+            <button onclick="two()"value="2" id="btn2">2</button>
+            <button onclick="three()"value="3" id="btn3">3</button>
+            <button onclick="btndevide()"value="/" id="btndevide" class="op">/</button>
+            <button onclick="four()"value="4" id="btn4">4</button>
+            <button onclick="five()"value="5" id="btn5">5</button>
+            <button onclick="six()"value="6" id="btn6">6</button>
+            <button onclick="btnx()"value="*" id="btnX" class="op">X</button>
+            <button onclick="seven()"value="7" id="btn7">7</button>
+            <button onclick="eight()"value="8" id="btn8">8</button>
+            <button onclick="nine()"value="9" id="btn9">9</button>
+            <button onclick="btnsub()"value="-" id="btnsub" class="op">-</button>
+            <button onclick="btnadd()"value="+" id="btnadd"class="op">+</button>
+            <button onclick="zero()"value="0" id="btn0">0</button>
+            <!-- <button onclick="btnmod()"value="%" id="btnmod" class="op">%</button> -->
+            <button onclick="equal()">=</button>
+            <button id="user" onclick="user()">input your value</button>
+      
+  
+        </div>
+    </div>
+        </body>
+    </head>
+</html>
